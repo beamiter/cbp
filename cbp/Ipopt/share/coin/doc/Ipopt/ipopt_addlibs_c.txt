@@ -1,0 +1,1 @@
+-L/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lipopt -llapack -lblas -lm -ldl   -lstdc++ -lm
