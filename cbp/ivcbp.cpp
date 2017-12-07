@@ -19,10 +19,8 @@ int main(int argc, char *argv[])
 {
     ros::init(argc, argv, "ivcbp");
     ros::NodeHandle nh;
-    // std::unique_ptr<curvemodel> curve(new curvemodel());
+    
     // std::unique_ptr<dwaplanner> dwa(new dwaplanner(nh));
-    // std::unique_ptr<dynamicapproach> elasticdwa(new dynamicapproach(nh));
-
     std::unique_ptr<sehs> heuristic(new sehs);
 
     ros::Rate loop(1);
@@ -33,7 +31,6 @@ int main(int argc, char *argv[])
         double duration;
         start = clock();
         // dwa->testModule();
-        // elasticdwa->testModule();
         heuristic->testModule();
         finish = clock();
         duration = (double)(finish - start) / CLOCKS_PER_SEC;
