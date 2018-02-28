@@ -32,4 +32,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/idriver/Ipopt/lib'
+libdir='/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib'

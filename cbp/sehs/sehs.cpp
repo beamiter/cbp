@@ -369,12 +369,22 @@ void sehs::testModule()
     cObs[obs.x].insert(obs);
     road.push_back(obs);
 
+    obs.x = 9;
+    obs.y = 0.0;
+    cObs[obs.x].insert(obs);
+    road.push_back(obs);
+
+    obs.x = 9;
+    obs.y = 1.0;
+    cObs[obs.x].insert(obs);
+    road.push_back(obs);
+
     obs.x = 14;
     obs.y = -0.5;
     cObs[obs.x].insert(obs);
     road.push_back(obs);  
 
-    for (float a = 0.0; a <= 15.0; a += 0.2)
+    for (float a = -2.0; a <= 20.0; a += 0.2)
     {
         obs.x = a;
         obs.y =  -1.5;
@@ -382,6 +392,8 @@ void sehs::testModule()
         road.push_back(obs); 
         obs.x = a;
         obs.y = +1.5;
+        if (obs.x > 7 && obs.x < 11)
+            continue;
         cObs[obs.x].insert(obs);
         road.push_back(obs); 
     }
@@ -436,9 +448,11 @@ void sehs::testModule()
     bool ok = false;
     std::vector<sKinodynamic> trajectory;
 
-    // ok = SpaceExploration(start, goal);
-    ok = WavefrontExpansion(start, goal, 5);
-    // ok = HybirdExpansion(start, goal, 5);
+    #if 0
+    ok = SpaceExploration(start, goal);
+    #else
+    ok = WavefrontExpansion(start, goal, 4);
+    #endif
     cout<<"Expansion status: "<<ok<<endl;
     
     std::vector<sFreeCircle> bubbles;
@@ -454,8 +468,8 @@ void sehs::testModule()
     }
     visdwa_marker->publishcircles(road);
     
-    // road = functions::curvefitting(road);
-    // visdwa_marker->publishobstacle(road, 3, 0.05);
+    road = functions::curvefitting(road);
+    visdwa_marker->publishobstacle(road, 3, 0.05);
 
     // Optimizer opt;
     // temp_road.clear();
@@ -477,7 +491,7 @@ void sehs::testModule()
     // tk::spline s;
     // s.set_points(X, Y);
 
-#if 1
+#if 0
     if (true == ok)
     {
         // ok = HeuristicSearch(start, goal, trajectory);

@@ -5,11 +5,8 @@
 #include <ctime>
 #include <opencv2//opencv.hpp>
 
-#include "dynamicapproach.h"
 #include "dwaplanner.h"
-#include "curvemodel.h"
 #include "dubins.h"
-#include "obsavoid.h"
 #include "sehs.h"
 
 using namespace std;

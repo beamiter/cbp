@@ -111,7 +111,7 @@ struct PriorityNode
         return (lhs.node.second < rhs.node.second);
     }
 
-    //The default priorityqueue is big top elements heap!!!
+    //The default priority queue is big top elements heap!!!
     typedef boost::heap::priority_queue<PriorityNode> PriorityQueue;
     typedef boost::heap::binomial_heap<PQElement, boost::heap::compare<CompareNode>> boostPriority;
     typedef std::priority_queue<PQElement, std::vector<PQElement>, CompareNode> stdPriority;

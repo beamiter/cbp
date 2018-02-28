@@ -175,8 +175,8 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-ABSBUILDDIR = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt
-ACLOCAL = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run aclocal-1.9
+ABSBUILDDIR = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt
+ACLOCAL = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run aclocal-1.9
 ADD_CFLAGS = 
 ADD_CXXFLAGS = 
 ADD_FFLAGS = 
@@ -186,7 +186,7 @@ ALWAYS_FALSE_FALSE =
 ALWAYS_FALSE_TRUE = #
 AMDEP_FALSE = #
 AMDEP_TRUE = 
-AMTAR = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run tar
+AMTAR = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run tar
 AR = ar
 ASL_CFLAGS = 
 ASL_CFLAGS_INSTALLED = 
@@ -197,9 +197,9 @@ ASL_LIBS =
 ASL_LIBS_INSTALLED = 
 ASTYLE = astyle
 ASTYLEFLAGS = --mode=c --indent=spaces=2 --indent-cases --indent-namespaces --min-conditional-indent=1 --brackets=linux --brackets=break-closing --convert-tabs
-AUTOCONF = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run automake-1.9
+AUTOCONF = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run automake-1.9
 AUX_DIR = 
 AWK = mawk
 BIT32FCOMMENT = C
@@ -246,8 +246,8 @@ COIN_HAS_MUMPS_FALSE =
 COIN_HAS_MUMPS_TRUE = #
 COIN_HAS_PKGCONFIG_FALSE = #
 COIN_HAS_PKGCONFIG_TRUE = 
-COIN_PKG_CONFIG_PATH = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig
-COIN_PKG_CONFIG_PATH_UNINSTALLED = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt:
+COIN_PKG_CONFIG_PATH = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig
+COIN_PKG_CONFIG_PATH_UNINSTALLED = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt:
 CPP = gcc -E
 CPPFLAGS = 
 CXX = g++
@@ -331,7 +331,7 @@ LT_LDFLAGS = -no-undefined
 MAINT = #
 MAINTAINER_MODE_FALSE = 
 MAINTAINER_MODE_TRUE = #
-MAKEINFO = ${SHELL} /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/missing --run makeinfo
 MATLAB_CYGPATH_W = echo
 MATLAB_HOME = 
 MEXSUFFIX = 
@@ -363,17 +363,17 @@ PACKAGE_VERSION = trunk
 PATH_SEPARATOR = :
 PKG_CONFIG = pkg-config
 RANLIB = ranlib
-RPATH_FLAGS =  -Wl,--rpath -Wl,/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
+RPATH_FLAGS =  -Wl,--rpath -Wl,/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
 SET_MAKE = 
 SHARED_FLAGS = -shared
 SHELL = /bin/bash
 STRIP = strip
 VERSION = trunk
 VPATH_DISTCLEANFILES = 
-abs_bin_dir = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/bin
-abs_include_dir = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include
-abs_lib_dir = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
-abs_source_dir = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt
+abs_bin_dir = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/bin
+abs_include_dir = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include
+abs_lib_dir = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
+abs_source_dir = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt
 ac_c_preproc_warn_flag = 
 ac_ct_AR = ar
 ac_ct_CC = gcc
@@ -410,7 +410,7 @@ exec_prefix = ${prefix}
 have_autoconf = 
 have_automake = 
 have_svn = 
-have_svnversion = yes
+have_svnversion = no
 host = x86_64-unknown-linux-gnu
 host_alias = 
 host_cpu = x86_64
@@ -418,14 +418,14 @@ host_os = linux-gnu
 host_vendor = unknown
 includedir = ${prefix}/include
 infodir = ${prefix}/info
-install_sh = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/install-sh
+install_sh = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/Ipopt/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localstatedir = ${prefix}/var
 mandir = ${prefix}/man
 mkdir_p = mkdir -p --
 oldincludedir = /usr/include
-prefix = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt
+prefix = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt
 program_transform_name = s,x,x,
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -1093,10 +1093,10 @@ astyle:
 #   since pkg-config may have reordered the flags from FLIBS, we take them out one by one
 install-data-hook:
 	@$(mkdir_p) "$(addlibsdir)"
-	PKG_CONFIG_PATH=/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig:$(DESTDIR)$(pkgconfiglibdir) \
+	PKG_CONFIG_PATH=/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig:$(DESTDIR)$(pkgconfiglibdir) \
 	$(PKG_CONFIG) --libs ipopt > $(addlibsdir)/ipopt_addlibs_cpp.txt
-##	echo "-libpath:`$(CYGPATH_W) /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libipopt.lib -llapack -lblas -lm  -ldl" > $(addlibsdir)/ipopt_addlibs_cpp.txt
-#	echo "-L/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lipopt -llapack -lblas -lm  -ldl" > $(addlibsdir)/ipopt_addlibs_cpp.txt
+##	echo "-libpath:`$(CYGPATH_W) /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libipopt.lib -llapack -lblas -lm  -ldl" > $(addlibsdir)/ipopt_addlibs_cpp.txt
+#	echo "-L/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lipopt -llapack -lblas -lm  -ldl" > $(addlibsdir)/ipopt_addlibs_cpp.txt
 	addlibs=`cat $(addlibsdir)/ipopt_addlibs_cpp.txt` ; \
 	echo "$$addlibs -lstdc++ -lm" > $(addlibsdir)/ipopt_addlibs_c.txt ; \
 	for i in  -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. -lgfortran -lm -lquadmath coin_dummy ; do \

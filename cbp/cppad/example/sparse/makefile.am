@@ -1,0 +1,59 @@
+# -----------------------------------------------------------------------------
+# CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-18 Bradley M. Bell
+#
+# CppAD is distributed under multiple licenses. This distribution is under
+# the terms of the
+#                     Eclipse Public License Version 1.0.
+#
+# A copy of this license is included in the COPYING file of this distribution.
+# Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+# -----------------------------------------------------------------------------
+# automake input file
+#
+# CppAD pusts all it's preprocessor definitions in the cppad/configure.hpp
+DEFS          =
+#
+check_PROGRAMS    = sparse
+#
+AM_CXXFLAGS       = -g $(CXX_FLAGS)
+#
+AM_CPPFLAGS       = -I. -I$(top_srcdir) $(BOOST_INCLUDE) $(EIGEN_INCLUDE)
+#
+if CppAD_EIGEN_DIR
+EIGEN_SRC_FILES  = sparse2eigen.cpp
+else
+EIGEN_SRC_FILES  =
+endif
+#
+sparse_SOURCES   = sparse.cpp \
+	$(EIGEN_SRC_FILES) \
+	colpack_hes.cpp \
+	colpack_hessian.cpp \
+	colpack_jac.cpp \
+	colpack_jacobian.cpp \
+	conj_grad.cpp \
+	dependency.cpp \
+	for_hes_sparsity.cpp \
+	for_jac_sparsity.cpp \
+	for_sparse_hes.cpp \
+	for_sparse_jac.cpp \
+	rc_sparsity.cpp \
+	rev_hes_sparsity.cpp \
+	rev_jac_sparsity.cpp \
+	rev_sparse_hes.cpp \
+	rev_sparse_jac.cpp \
+	subgraph_reverse.cpp \
+	sparse_hes.cpp \
+	sparse_hessian.cpp \
+	sparse_jac_for.cpp \
+	sparse_jacobian.cpp \
+	sparse_jac_rev.cpp \
+	sparse_sub_hes.cpp \
+	sparsity_sub.cpp \
+	sub_sparse_hes.cpp \
+	subgraph_hes2jac.cpp \
+	subgraph_jac_rev.cpp \
+	subgraph_sparsity.cpp
+#
+test: check
+	./sparse

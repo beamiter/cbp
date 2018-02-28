@@ -34,7 +34,7 @@ CXX = g++
 CXXFLAGS = -O3 -pipe -DNDEBUG -Wparentheses -Wreturn-type -Wcast-qual -Wall -Wpointer-arith -Wwrite-strings -Wconversion -Wno-unknown-pragmas -Wno-long-long   -DIPOPT_BUILD
 
 # additional C++ Compiler options for linking
-CXXLINKFLAGS =  -Wl,--rpath -Wl,/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
+CXXLINKFLAGS =  -Wl,--rpath -Wl,/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib
 
 SRCDIR = .
 ipoptsrcdir  = $(SRCDIR)/../../../../src
@@ -42,13 +42,13 @@ senssrcdir = $(SRCDIR)/../../src
 
 # Include directories (we use the CYGPATH_W variables to allow compilation with Windows compilers)
 #   we also need some Ipopt headers that are not installed, so we add $(ipoptsrcdir)/Algorithm and $(ipoptsrcdir)/LinAlg
-INCL = `PKG_CONFIG_PATH=/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --cflags ipopt` -I`$(CYGPATH_W) $(ipoptsrcdir)/Algorithm` -I`$(CYGPATH_W) $(ipoptsrcdir)/LinAlg` -I`$(CYGPATH_W) $(senssrcdir)` $(ADDINCFLAGS)
-#INCL = -I`$(CYGPATH_W) /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include/coin`  -I`$(CYGPATH_W) $(ipoptsrcdir)/Algorithm` -I`$(CYGPATH_W) $(ipoptsrcdir)/LinAlg` -I`$(CYGPATH_W) $(senssrcdir)` $(ADDINCFLAGS)
+INCL = `PKG_CONFIG_PATH=/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --cflags ipopt` -I`$(CYGPATH_W) $(ipoptsrcdir)/Algorithm` -I`$(CYGPATH_W) $(ipoptsrcdir)/LinAlg` -I`$(CYGPATH_W) $(senssrcdir)` $(ADDINCFLAGS)
+#INCL = -I`$(CYGPATH_W) /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include/coin`  -I`$(CYGPATH_W) $(ipoptsrcdir)/Algorithm` -I`$(CYGPATH_W) $(ipoptsrcdir)/LinAlg` -I`$(CYGPATH_W) $(senssrcdir)` $(ADDINCFLAGS)
 
 # Linker flags
-LIBS = -lsipopt `PKG_CONFIG_PATH=/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --libs ipopt`
-##LIBS = -link -libpath:`$(CYGPATH_W) /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libsipopt.lib libipopt.lib -llapack -lblas -lm  -ldl
-#LIBS = -L/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lsipopt -lipopt -llapack -lblas -lm  -ldl
+LIBS = -lsipopt `PKG_CONFIG_PATH=/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --libs ipopt`
+##LIBS = -link -libpath:`$(CYGPATH_W) /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libsipopt.lib libipopt.lib -llapack -lblas -lm  -ldl
+#LIBS = -L/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lsipopt -lipopt -llapack -lblas -lm  -ldl
 
 # The following is necessary under cygwin, if native compilers are used
 CYGPATH_W = echo

@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/det_by_minor_c.dir/det_by_minor_c.c.o  -o det_by_minor_c -rdynamic 

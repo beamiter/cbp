@@ -1,0 +1,69 @@
+/* --------------------------------------------------------------------------
+CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-17 Bradley M. Bell
+
+CppAD is distributed under multiple licenses. This distribution is under
+the terms of the
+                    Eclipse Public License Version 1.0.
+
+A copy of this license is included in the COPYING file of this distribution.
+Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------- */
+$begin deprecated$$
+$spell
+	autotools
+	CppAD
+	Bool
+	jac
+	hes
+	colpack
+$$
+
+$section CppAD Deprecated API Features$$
+
+$childtable%
+	omh/appendix/deprecated/include_deprecated.omh%
+	omh/appendix/deprecated/fun_deprecated.omh%
+	omh/appendix/deprecated/compare_change.omh%
+	cppad/core/omp_max_thread.hpp%
+	cppad/utility/track_new_del.hpp%
+	omh/appendix/deprecated/omp_alloc.omh%
+	cppad/utility/memory_leak.hpp%
+	cppad/core/epsilon.hpp%
+	cppad/core/test_vector.hpp%
+	cppad_ipopt/src/cppad_ipopt_nlp.hpp%
+	cppad/core/old_atomic.hpp%
+	cppad/core/zdouble.hpp%
+	omh/install/autotools.omh
+%$$
+
+
+$head Name Changes$$
+$table
+$cref/CppADCreateUnaryBool/BoolFun/Deprecated 2007-07-31/$$  $cnext
+	$title BoolFun$$
+$rnext
+$cref/CppADCreateDiscrete/Discrete/CppADCreateDiscrete Deprecated 2007-07-28/$$  $cnext
+	$title Discrete$$
+$rnext
+$cref/nan(zero)/nan/nan(zero)/$$ $cnext $codei%nan(%zero%)%$$
+$rnext
+$code colpack.star$$ coloring $cnext see
+$cref/sparse_hes/sparse_hes/coloring/colpack.star Deprecated 2017-06-01/$$
+and
+$cref/sparse_hessian
+	/sparse_hessian
+	/work
+	/colpack.star Deprecated 2017-06-01
+/$$
+
+$tend
+
+$head Atomic Functions$$
+The following are links to deprecated $cref atomic_base$$ interfaces:
+$cref/for_sparse_jac/atomic_for_sparse_jac/Deprecated 2016-06-27/$$,
+$cref/rev_sparse_jac/atomic_rev_sparse_jac/Deprecated 2016-06-27/$$,
+$cref/for_sparse_hes/atomic_for_sparse_hes/Deprecated 2016-06-27/$$,
+$cref/rev_sparse_hes/atomic_rev_sparse_hes/Deprecated 2016-06-27/$$.
+
+
+$end

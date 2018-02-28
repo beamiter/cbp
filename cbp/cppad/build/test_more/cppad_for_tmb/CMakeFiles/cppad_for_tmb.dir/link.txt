@@ -1,0 +1,1 @@
+/usr/bin/c++   -g  -fopenmp CMakeFiles/cppad_for_tmb.dir/cppad_for_tmb.cpp.o  -o cppad_for_tmb -rdynamic 

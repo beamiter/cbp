@@ -4,133 +4,146 @@
 
 #include "sehs.h"
 
+//This algorithm costs 7ms, performs better
 bool sehs::SpaceExploration(sKinodynamic start, sKinodynamic goal)
 {
     FreeCircleMap<sFreeCircle> came_from;
-    OpenMultiset<sFreeCircle> openlist;
+    FreeCircleMap<float> cost_so_far;
+    functions::PriorityNode<sFreeCircle, float> frontier;
     std::vector<sFreeCircle> closed_vector;
-    sFreeCircle next_circle;
+    sFreeCircle next_circle, current_circle;
 
-    sFreeCircle start_circle, goal_circle;
+    sKinodynamic final;
+    sFreeCircle start_circle, goal_circle, final_circle;
     GenerateCircle(start, start_circle);
     GenerateCircle(goal, goal_circle);
+    
+    // final.x = goal_circle.center.x - goal_circle.radius * cos(goal_circle.center.theta);
+    // final.y = goal_circle.center.y - goal_circle.radius * sin(goal_circle.center.theta);
+    // GenerateCircle(final, final_circle);
 
-    stparam::target = goal_circle;
-
-    openlist.nearest.insert(start_circle);
-    openlist.largest.insert(start_circle);
-
+    frontier.elements.emplace(start_circle, 0.0);
     came_from[start_circle] = start_circle;
+    cost_so_far[start_circle] = 0.0;
 
-    while(!openlist.nearest.empty())
+    ros::Time timePre = ros::Time::now();
+
+    while(!frontier.elements.empty())
     {
-        // cout<<"--------------------********************--------------------"<<endl;
-
-        auto near = *openlist.nearest.begin();
-        // std::cout<<"near.center.x: "<<near.center.x<<std::endl;
-        if(OverLap(near, goal_circle, 0.6))
+        if  ((ros::Time::now() - timePre).toSec() > 0.40)
         {
-            ROS_ERROR_STREAM("Reached goal!!!");
+            ROS_ERROR_STREAM("Waving failed, time out !!!");
+            return false;
+        }
+        current_circle = frontier.elements.top().first;
+        frontier.elements.pop();
+        
+        // if (OverLap(current_circle, final_circle, 0.6))
+        if (OverLap(current_circle, goal_circle, 0.6))
+        {
+            path_points.clear();
+            circle_path.clear();
+            geometry_msgs::Point32 obs;
+            sFreeCircle reverse_circle, previous_circle;
 
-            closed_vector.push_back(near);
-            closed_vector.push_back(goal_circle);
-            came_from[goal_circle] = near;
-            sFreeCircle reverse_circle = goal_circle;
+            /*This helps lead to smooth the final path angle*/
+            // came_from[goal_circle] = final_circle;
+            // came_from[final_circle] = current_circle;
+
+            came_from[goal_circle] = current_circle;
+            
+            circle_path.emplace_back(goal_circle, 0.0);
+            reverse_circle = goal_circle;
+
+            //This record all the circles in the open table
+            auto circle_iter = came_from.begin();
+            while(circle_iter != came_from.end())
+            {
+                obs.x = circle_iter->first.center.x;
+                obs.y = circle_iter->first.center.y;
+                obs.z = circle_iter->first.radius;
+                circle_iter++;
+                path_points.push_back(obs);
+            }
+
+            float circle_distance = 0.0; 
             while(!(reverse_circle == start_circle))
             {
-                // cout<<"reverse_circle.center.x: "<<reverse_circle.center.x<<"; reverse_circle.center.y: "
-                //     <<reverse_circle.center.y<<endl;
-                // cout<<"reverse_circle.radius: "<<reverse_circle.radius<<endl;
+                previous_circle = reverse_circle;
                 reverse_circle = came_from[reverse_circle];
+                circle_distance += std::hypot(previous_circle.center.x - reverse_circle.center.x,
+                                              previous_circle.center.y - reverse_circle.center.y);
+                circle_path.emplace_back(reverse_circle, circle_distance);
             }
-            // cout<<"reverse_circle.center.x: "<<reverse_circle.center.x<<"; reverse_circle.center.y: "
-            //     <<reverse_circle.center.y<<endl;
-            // cout<<"reverse_circle.radius: "<<reverse_circle.radius<<endl;
+            std::reverse(circle_path.begin(), circle_path.end());
             return true;
         }
         else
         {
-            auto large = *openlist.largest.begin();
+            float angle = 0.0;
+            if (came_from.count(current_circle))
+            {
+                angle = atan2(current_circle.center.y - came_from[current_circle].center.y,
+                                      current_circle.center.x - came_from[current_circle].center.x);
+            }
+            float new_cost = 0.0;
+            float h_cost = 0.0;
+            float priority_value = 0.0;
+            float sample_angle = M_PI / 8.0;
+            bool success_flag = false;
+            /*ensure the completeness for the hybird sampling*/
 
-            openlist.nearest.erase(openlist.nearest.begin());
-            openlist.largest.erase(openlist.largest.begin());
+             new_cost = cost_so_far[current_circle] + current_circle.radius;
+            for (int a = -8; a < 8; ++a)
+            {
+                /*1. regular sampling process*/
+                float theta = angle + a * sample_angle;
+                next_circle.center.x = current_circle.center.x + current_circle.radius * cos(theta);
+                next_circle.center.y = current_circle.center.y + current_circle.radius * sin(theta);
+                next_circle.radius = current_circle.radius;
+                if (fabs(a) <= 3) {
+                    next_circle.forward = true;
+                }else{
+                    next_circle.forward = false;
+                    continue;
+                }
+                if (true == SampleCircle(next_circle, next_circle))
+                {
+                    if (true == NotExist(next_circle, closed_vector))
+                    {     
+                        success_flag = true;  
 
-            auto iter = openlist.largest.find(near);
-            if (iter != openlist.largest.end())
-            {
-                openlist.largest.erase(iter);
-            } 
-            iter = openlist.nearest.find(large);
-            if (iter != openlist.nearest.end())
-            {
-                openlist.nearest.erase(iter);
+                        #if 0
+                        /*The DFS graph search frame work!!!*/
+                        // priority_value = std::hypot(next_circle.center.x - goal_circle.center.x, 
+                        //                  next_circle.center.y - goal_circle.center.y) - next_circle.radius;
+                        // frontier.elements.emplace(next_circle, priority_value); 
+                        // came_from[next_circle] = current_circle;
+                        #else
+                        /*Add the A* graph search frame work!!!*/
+                        if (!came_from.count(next_circle))
+                        {
+                            if (!cost_so_far.count(next_circle) || (new_cost < cost_so_far[next_circle]))
+                            {
+                                h_cost = std::hypot(next_circle.center.x - goal_circle.center.x, 
+                                next_circle.center.y - goal_circle.center.y) - next_circle.radius;
+                                priority_value = new_cost + h_cost;
+                                frontier.elements.emplace(next_circle, priority_value); 
+                                cost_so_far[next_circle] = new_cost;
+                                came_from[next_circle] = current_circle;
+                            }
+                        }
+                        #endif
+                    }
+                }     
             }
-
-            if (true == NotExist(near, closed_vector))
+            if (true == success_flag)
             {
-                // std::cout<<"1. near.center.x: "<<near.center.x<<"; near.center.y: "<<near.center.y<<std::endl;
-                if (true == Expand(near, goal_circle, 6, next_circle))
-                {
-                    // std::cout<<"next_circle.radius: "<<next_circle.radius<<std::endl;
-                    closed_vector.push_back(near);
-                    came_from[next_circle] = near;
-                    openlist.nearest.insert(next_circle);
-                    openlist.largest.insert(next_circle);
-                }
-                else
-                {
-                    ROS_ERROR_STREAM("1. Expand the circle failed!!!");
-                }
-            }
-            else
-            {
-                ROS_ERROR_STREAM("1. Already existed in the close table!!!");
-                // std::cout<<"------1. near.center.x: "<<near.center.x<<"; near.center.y: "<<near.center.y<<std::endl;
-            }
-            if (true == NotExist(large, closed_vector))
-            {
-                // std::cout<<"2. large.center.x: "<<large.center.x<<std::endl;
-                if (true == Expand(large, goal_circle, 4, next_circle))
-                {
-                    // std::cout<<"2. next_circle.center.x: "<<next_circle.center.x<<std::endl;
-                    closed_vector.push_back(large);
-                    came_from[next_circle] = large;
-                    openlist.largest.insert(next_circle);
-                    openlist.nearest.insert(next_circle);
-                }
-            }
+                closed_vector.push_back(current_circle);
+            }  
         }
     }
-
-    return false;
-}
-
-/*
-* @brief: samples the border of circle
-*/
-bool sehs::Expand(sFreeCircle current, sFreeCircle goal, int sample_number, sFreeCircle& target)
-{
-    if (0 == sample_number)
-    {
-        return false;
-    }
-
-    sKinodynamic circle;
-    float included_angle = 0.0;
-    float sample_angle = 2 * M_PI / sample_number;
-    included_angle = atan2(goal.center.y - current.center.y, goal.center.x - current.center.x);
-    
-    for (int i = 0; i < sample_number; ++i)
-    {
-        float angle = included_angle + i * sample_angle;
-        circle.x = current.center.x + current.radius * cos(angle);
-        circle.y = current.center.y + current.radius * sin(angle);
-        // cout<<"circle.x: "<<circle.x<<"; circle.y: "<<circle.y<<endl;
-        if (true == GenerateCircle(circle, target))
-        {
-            return true;
-        }
-    }
+    ROS_ERROR_STREAM("Expansion failed!!!");
     return false;
 }
 
@@ -140,18 +153,16 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
     FreeCircleMap<float> cost_so_far;
     functions::PriorityNode<sFreeCircle, float> frontier;
     std::vector<sFreeCircle> closed_vector;
-    sFreeCircle next_circle, current;
+    sFreeCircle next_circle, current_circle;
 
     sKinodynamic final;
     sFreeCircle start_circle, goal_circle, final_circle;
     GenerateCircle(start, start_circle);
     GenerateCircle(goal, goal_circle);
     
-    final.x = goal_circle.center.x - goal_circle.radius * cos(goal_circle.center.theta);
-    final.y = goal_circle.center.y - goal_circle.radius * sin(goal_circle.center.theta);
-    GenerateCircle(final, final_circle);
-
-    stparam::target = final_circle;
+    // final.x = goal_circle.center.x - goal_circle.radius * cos(goal_circle.center.theta);
+    // final.y = goal_circle.center.y - goal_circle.radius * sin(goal_circle.center.theta);
+    // GenerateCircle(final, final_circle);
 
     frontier.elements.emplace(start_circle, 0.0);
     came_from[start_circle] = start_circle;
@@ -162,16 +173,17 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
     while(!frontier.elements.empty())
     {
         
-        if  ((ros::Time::now() - timePre).toSec() > 0.040)
+        if  ((ros::Time::now() - timePre).toSec() > 0.40)
         {
             ROS_ERROR_STREAM("Waving failed!!!");
             return false;
         }
 
-        current = frontier.elements.top().first;
+        current_circle = frontier.elements.top().first;
         frontier.elements.pop();
         
-        if (OverLap(current, final_circle, 0.6))
+        // if (OverLap(current_circle, final_circle, 0.6))
+        if (OverLap(current_circle, goal_circle, 0.6))
         {
             // ROS_ERROR_STREAM("Reached goal!!!");
             path_points.clear();
@@ -180,8 +192,10 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
             sFreeCircle reverse_circle, previous_circle;
 
             /*This helps lead to smooth the final path angle*/
-            came_from[goal_circle] = final_circle;
-            came_from[final_circle] = current;
+            // came_from[goal_circle] = final_circle;
+            // came_from[final_circle] = current_circle;
+
+            came_from[goal_circle] = current_circle;
             
             circle_path.emplace_back(goal_circle, 0.0);
             reverse_circle = goal_circle;
@@ -197,10 +211,6 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
                 obs.y = circle_iter->first.center.y;
                 obs.z = circle_iter->first.radius;
                 circle_iter++;
-                // if (obs.x > 3.0)
-                // {
-                //     continue;
-                // }
                 path_points.push_back(obs);
             }
 
@@ -227,31 +237,52 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
         }
         else
         {
-            // std::cout<<"1. current.center.x: "<<current.center.x<<"; current.center.y: "<<current.center.y<<std::endl;
+            // std::cout<<"1. current_circle.center.x: "<<current_circle.center.x<<"; current_circle.center.y: "<<current_circle.center.y<<std::endl;
             float angle = 0.0;
             float new_cost = 0.0;
+            float h_cost = 0.0;
             float priority_value = 0.0;
             float sample_area = 45.0 * M_PI / 180.0;
             float sample_angle = sample_area / sample_number;
             bool success_flag = false;
             /*ensure the completeness for the hybird sampling*/
+
+            new_cost = cost_so_far[current_circle] + current_circle.radius;
             for (int a = 0; a < 8; ++a)
             {
                 float theta = a * sample_area;
                 /*1. regular sampling process*/
                 angle = theta;
-                next_circle.center.x = current.center.x + current.radius * cos(angle);
-                next_circle.center.y = current.center.y + current.radius * sin(angle);
-                next_circle.radius = current.radius;
+                next_circle.center.x = current_circle.center.x + current_circle.radius * cos(angle);
+                next_circle.center.y = current_circle.center.y + current_circle.radius * sin(angle);
+                next_circle.radius = current_circle.radius;
                 if (true == SampleCircle(next_circle, next_circle))
                 {
                     if (true == NotExist(next_circle, closed_vector))
                     {     
                         success_flag = true;  
-                        came_from[next_circle] = current;
+
+                        #if 0
                         priority_value = std::hypot(next_circle.center.x - goal_circle.center.x, 
                                          next_circle.center.y - goal_circle.center.y) - next_circle.radius;
                         frontier.elements.emplace(next_circle, priority_value); 
+                        came_from[next_circle] = current_circle;
+                        #else
+                        /*Add the A* graph search frame work!!!*/
+                        if (!came_from.count(next_circle))
+                        {
+                            if (!cost_so_far.count(next_circle) || (new_cost < cost_so_far[next_circle]))
+                            {
+                                h_cost = std::hypot(next_circle.center.x - goal_circle.center.x, 
+                                next_circle.center.y - goal_circle.center.y) - next_circle.radius;
+
+                                priority_value = new_cost + h_cost;
+                                frontier.elements.emplace(next_circle, priority_value); 
+                                cost_so_far[next_circle] = new_cost;
+                                came_from[next_circle] = current_circle;
+                            }
+                        }
+                        #endif
                     }
                 }     
                    
@@ -260,9 +291,9 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
                 for (int i = 1; i < sample_number; ++i)
                 {
                     angle = theta + i * sample_angle;
-                    next_circle.center.x = current.center.x + current.radius * cos(angle);
-                    next_circle.center.y = current.center.y + current.radius * sin(angle);
-                    next_circle.radius = current.radius;
+                    next_circle.center.x = current_circle.center.x + current_circle.radius * cos(angle);
+                    next_circle.center.y = current_circle.center.y + current_circle.radius * sin(angle);
+                    next_circle.radius = current_circle.radius;
                     if (true == SampleCircle(next_circle, next_circle))
                     {
                         if (true == NotExist(next_circle, closed_vector))
@@ -275,15 +306,33 @@ bool sehs::WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_
                 {
                     success_flag = true;  
                     next_circle = area_frontier.top().node.first;
-                    came_from[next_circle] = current;
+
+                    #if 0     
                     priority_value = std::hypot(next_circle.center.x - goal_circle.center.x, 
                                      next_circle.center.y - goal_circle.center.y) - next_circle.radius;
-                    frontier.elements.emplace(next_circle, priority_value);       
+                    frontier.elements.emplace(next_circle, priority_value);   
+                    came_from[next_circle] = current_circle;
+                    #else
+                    /*Add the A* graph search frame work!!!*/
+                    if (!came_from.count(next_circle))
+                    {
+                        if (!cost_so_far.count(next_circle) || (new_cost < cost_so_far[next_circle]))
+                        {
+                            h_cost = std::hypot(next_circle.center.x - goal_circle.center.x, 
+                            next_circle.center.y - goal_circle.center.y) - next_circle.radius;
+
+                            priority_value = new_cost + h_cost;
+                            frontier.elements.emplace(next_circle, priority_value); 
+                            cost_so_far[next_circle] = new_cost;
+                            came_from[next_circle] = current_circle;
+                        }
+                    }
+                    #endif 
                 }
             }
             if (true == success_flag)
             {
-                closed_vector.push_back(current);
+                closed_vector.push_back(current_circle);
             }  
         }
     }
@@ -401,7 +450,7 @@ bool sehs::ReachedGoal(sKinodynamic currentvs, sKinodynamic goalvs)
 */
 bool sehs::OverLap(sFreeCircle current, sFreeCircle comparison, float margin)
 {
-    margin = (margin > 1.95)? 1.95 : margin;
+    margin = (margin > 1.5)? 1.5 : margin;
     margin = (margin < 0.0)? 0.0 : margin;
     float min_radius = (current.radius <= comparison.radius)? current.radius : comparison.radius;
     float distance = std::hypot(current.center.x - comparison.center.x, current.center.y - comparison.center.y);
@@ -416,7 +465,7 @@ bool sehs::NotExist(sFreeCircle current, std::vector<sFreeCircle> closed_vector)
 {
     for (auto a : closed_vector)
     {
-        if (true == OverLap(current, a, 1.8))
+        if (true == OverLap(current, a, 0.9))
         {
             return false;
         }
@@ -488,175 +537,4 @@ bool sehs::FreeSpaceEstimate(sFreeCircle current)
         }
     }
     return true;
-}
-
-bool sehs::HybirdExpansion(sKinodynamic start, sKinodynamic goal, int sample_number)
-{
-    FreeCircleMap<sFreeCircle> came_from;
-    FreeCircleMap<float> cost_so_far;
-    functions::PriorityNode<sFreeCircle, float> frontier;
-    std::vector<sFreeCircle> closed_vector;
-    sFreeCircle next_circle, current;
-
-    sKinodynamic final;
-    sFreeCircle start_circle, goal_circle, final_circle;
-    GenerateCircle(start, start_circle);
-    GenerateCircle(goal, goal_circle);
-    
-    final.x = goal_circle.center.x - goal_circle.radius * cos(goal_circle.center.theta);
-    final.y = goal_circle.center.y - goal_circle.radius * sin(goal_circle.center.theta);
-    GenerateCircle(final, final_circle);
-
-    stparam::target = final_circle;
-
-    frontier.elements.emplace(start_circle, 0.0);
-    came_from[start_circle] = start_circle;
-    cost_so_far[start_circle] = 0.0;
-
-    ros::Time timePre = ros::Time::now();
-
-    while(!frontier.elements.empty())
-    {
-        
-        if  ((ros::Time::now() - timePre).toSec() > 0.25)
-        {
-            ROS_ERROR_STREAM("Waving failed!!!");
-            return false;
-        }
-
-        current = frontier.elements.top().first;
-        frontier.elements.pop();
-        
-        if (OverLap(current, final_circle, 0.6))
-        {
-            // ROS_ERROR_STREAM("Reached goal!!!");
-            circle_path.clear();
-            geometry_msgs::Point32 obs;
-            sFreeCircle reverse_circle, previous_circle;
-
-            /*This helps lead to smooth the final path angle*/
-            came_from[goal_circle] = final_circle;
-            came_from[final_circle] = current;
-            
-            circle_path.emplace_back(goal_circle, 0.0);
-            reverse_circle = goal_circle;
-
-            auto circle_iter = came_from.begin();
-            while(circle_iter != came_from.end())
-            {
-                obs.x = circle_iter->first.center.x;
-                obs.y = circle_iter->first.center.y;
-                obs.z = circle_iter->first.radius;
-                circle_iter++;
-            }
-
-            float circle_distance = 0.0; 
-            while(!(reverse_circle == start_circle))
-            {
-                previous_circle = reverse_circle;
-                reverse_circle = came_from[reverse_circle];
-                circle_distance += std::hypot(previous_circle.center.x - reverse_circle.center.x,
-                                              previous_circle.center.y - reverse_circle.center.y);
-                circle_path.emplace_back(reverse_circle, circle_distance);
-            }
-            std::reverse(circle_path.begin(), circle_path.end());
-            // cout<<"came_from.size(): "<<came_from.size()<<endl;
-            // cout<<"closed_vector.size(): "<<closed_vector.size()<<endl;
-            // cout<<"circle_path.size(): "<<circle_path.size()<<endl;
-            // cout<<"********************************"<<endl;
-            return true;
-        }
-        else
-        {
-            float angle = 0.0;
-            float new_cost = 0.0;
-            float h_cost = 0.0;
-            float priority_value = 0.0;
-            float sample_area = 45.0 * M_PI / 180.0;
-            float sample_angle = sample_area / sample_number;
-            bool success_flag = false;
-            /*ensure the completeness for the hybird sampling*/
-
-            new_cost = cost_so_far[current] + current.radius;
-            /*All the sampled circels have the same travel distance*/
-            for (int a = 0; a < 8; ++a)
-            {
-                float theta = a * sample_area;
-                /*1. regular sampling process*/
-                angle = theta;
-                next_circle.center.x = current.center.x + current.radius * cos(angle);
-                next_circle.center.y = current.center.y + current.radius * sin(angle);
-                next_circle.radius = current.radius;
-                if (true == SampleCircle(next_circle, next_circle))
-                {
-                    if (true == NotExist(next_circle, closed_vector))
-                    {     
-                        success_flag = true;  
-
-                        /*Add the A* graph search frame work!!!*/
-                        if (!came_from.count(next_circle))
-                        {
-                            if (!cost_so_far.count(next_circle) || (new_cost < cost_so_far[next_circle]))
-                            {
-                                h_cost = std::hypot(next_circle.center.x - goal_circle.center.x, 
-                                next_circle.center.y - goal_circle.center.y) - next_circle.radius;
-
-                                priority_value = new_cost + h_cost;
-                                frontier.elements.emplace(next_circle, priority_value); 
-                                cost_so_far[next_circle] = new_cost;
-                                came_from[next_circle] = current;
-                            }
-                        }
-                    }
-                }     
-                   
-                /*2. shrink sampling process*/ 
-                functions::PriorityNode<sFreeCircle, float>::PriorityQueue area_frontier;   
-                for (int i = 1; i < sample_number; ++i)
-                {
-                    angle = theta + i * sample_angle;
-                    next_circle.center.x = current.center.x + current.radius * cos(angle);
-                    next_circle.center.y = current.center.y + current.radius * sin(angle);
-                    next_circle.radius = current.radius;
-                    if (true == SampleCircle(next_circle, next_circle))
-                    {
-                        if (true == NotExist(next_circle, closed_vector))
-                        {     
-                            area_frontier.emplace(next_circle, next_circle.radius);
-                        }
-                    }
-                }
-                if (!area_frontier.empty())
-                {
-                    next_circle = area_frontier.top().node.first;
-
-                    if (true == NotExist(next_circle, closed_vector))
-                    {     
-                        success_flag = true;  
-
-                        /*Add the A* graph search frame work!!!*/
-                        if (!came_from.count(next_circle))
-                        {
-                            if (!cost_so_far.count(next_circle) || (new_cost < cost_so_far[next_circle]))
-                            {
-                                h_cost = std::hypot(next_circle.center.x - goal_circle.center.x, 
-                                next_circle.center.y - goal_circle.center.y) - next_circle.radius;
-
-                                priority_value = new_cost + h_cost;
-                                frontier.elements.emplace(next_circle, priority_value); 
-                                cost_so_far[next_circle] = new_cost;
-                                came_from[next_circle] = current;
-                            }
-                        }
-                    }   
-                }
-            }
-            if (true == success_flag)
-            {
-                closed_vector.push_back(current);
-            }  
-        }
-    }
-    ROS_ERROR_STREAM("Expansion failed!!!");
-    return false;
 }

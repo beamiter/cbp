@@ -1,0 +1,1146 @@
+The system is: Linux - 4.4.0-31-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1844681521/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1844681521.dir/build.make CMakeFiles/cmTryCompileExec1844681521.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1844681521.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1844681521.dir/testCCompiler.c.o   -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1844681521
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1844681521.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1844681521.dir/testCCompiler.c.o  -o cmTryCompileExec1844681521 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3374929583/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3374929583.dir/build.make CMakeFiles/cmTryCompileExec3374929583.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3374929583
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3374929583.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3374929583 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3374929583' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3374929583 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3374929583/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3374929583.dir/build.make CMakeFiles/cmTryCompileExec3374929583.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3374929583]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3374929583.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3374929583 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3374929583' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec3374929583 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3374929583] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec3374929583.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec791993571/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec791993571.dir/build.make CMakeFiles/cmTryCompileExec791993571.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec791993571.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec791993571.dir/feature_tests.c.o   -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec791993571
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec791993571.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec791993571.dir/feature_tests.c.o  -o cmTryCompileExec791993571 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2132697270/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2132697270.dir/build.make CMakeFiles/cmTryCompileExec2132697270.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2132697270.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec2132697270.dir/feature_tests.c.o   -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec2132697270
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2132697270.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2132697270.dir/feature_tests.c.o  -o cmTryCompileExec2132697270 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec911946914/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec911946914.dir/build.make CMakeFiles/cmTryCompileExec911946914.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec911946914.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec911946914.dir/feature_tests.c.o   -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec911946914
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec911946914.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec911946914.dir/feature_tests.c.o  -o cmTryCompileExec911946914 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec351518046/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec351518046.dir/build.make CMakeFiles/cmTryCompileExec351518046.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec351518046.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec351518046.dir/testCXXCompiler.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec351518046
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec351518046.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec351518046.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec351518046 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec796480232/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec796480232.dir/build.make CMakeFiles/cmTryCompileExec796480232.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec796480232
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec796480232.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec796480232 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec796480232' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec796480232 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec796480232/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec796480232.dir/build.make CMakeFiles/cmTryCompileExec796480232.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec796480232]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec796480232.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec796480232 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec796480232' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec796480232 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec796480232] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec796480232.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2749438991/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2749438991.dir/build.make CMakeFiles/cmTryCompileExec2749438991.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2749438991.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec2749438991.dir/feature_tests.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2749438991
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2749438991.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2749438991.dir/feature_tests.cxx.o  -o cmTryCompileExec2749438991 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec501310142/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec501310142.dir/build.make CMakeFiles/cmTryCompileExec501310142.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec501310142.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec501310142.dir/feature_tests.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec501310142
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec501310142.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec501310142.dir/feature_tests.cxx.o  -o cmTryCompileExec501310142 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3339951243/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3339951243.dir/build.make CMakeFiles/cmTryCompileExec3339951243.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3339951243.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec3339951243.dir/feature_tests.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec3339951243
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3339951243.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3339951243.dir/feature_tests.cxx.o  -o cmTryCompileExec3339951243 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C++ SOURCE FILE Test cppad_has_signed_long_long_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3695778764/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3695778764.dir/build.make CMakeFiles/cmTryCompileExec3695778764.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3695778764.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_signed_long_long_result   -o CMakeFiles/cmTryCompileExec3695778764.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3695778764
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3695778764.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_has_signed_long_long_result    CMakeFiles/cmTryCompileExec3695778764.dir/src.cxx.o  -o cmTryCompileExec3695778764 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+int main(void)
+{	signed long long value = 0;
+	return int(value);
+}
+Performing C++ SOURCE FILE Test cppad_has_long_long_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2172340521/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2172340521.dir/build.make CMakeFiles/cmTryCompileExec2172340521.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2172340521.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_long_long_result   -o CMakeFiles/cmTryCompileExec2172340521.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2172340521
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2172340521.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_has_long_long_result    CMakeFiles/cmTryCompileExec2172340521.dir/src.cxx.o  -o cmTryCompileExec2172340521 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+template <class T> inline bool is_pod(void)  { return false; }
+template <>  inline bool is_pod<signed long long>(void) { return true;  }
+template <>  inline bool is_pod<unsigned long long>(void) { return true;  }
+int main(void)
+{	return 0; }
+
+Performing C++ SOURCE FILE Test cppad_has_gettimeofday_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1627409026/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1627409026.dir/build.make CMakeFiles/cmTryCompileExec1627409026.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1627409026.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_gettimeofday_result   -o CMakeFiles/cmTryCompileExec1627409026.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1627409026
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1627409026.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_has_gettimeofday_result    CMakeFiles/cmTryCompileExec1627409026.dir/src.cxx.o  -o cmTryCompileExec1627409026 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+# include<sys/time.h>
+int main(void)
+{	struct timeval time;
+	gettimeofday(&time, 0);
+	return 0;
+}
+Performing C++ SOURCE FILE Test cppad_tape_id_type_is_unsigned_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1903971967/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1903971967.dir/build.make CMakeFiles/cmTryCompileExec1903971967.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1903971967.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_tape_id_type_is_unsigned_result   -o CMakeFiles/cmTryCompileExec1903971967.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1903971967
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1903971967.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_tape_id_type_is_unsigned_result    CMakeFiles/cmTryCompileExec1903971967.dir/src.cxx.o  -o cmTryCompileExec1903971967 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+# include <limits>
+int main(void)
+{	bool is_unsigned = ! std::numeric_limits<unsigned int>::is_signed;
+	return int(! is_unsigned);
+}
+
+Performing C++ SOURCE FILE Test cppad_tape_addr_type_is_unsigned_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec943492663/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec943492663.dir/build.make CMakeFiles/cmTryCompileExec943492663.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec943492663.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_tape_addr_type_is_unsigned_result   -o CMakeFiles/cmTryCompileExec943492663.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec943492663
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec943492663.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_tape_addr_type_is_unsigned_result    CMakeFiles/cmTryCompileExec943492663.dir/src.cxx.o  -o cmTryCompileExec943492663 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+# include <limits>
+int main(void)
+{	bool is_unsigned = ! std::numeric_limits<unsigned int>::is_signed;
+	return int(! is_unsigned);
+}
+
+Performing C++ SOURCE FILE Test cppad_max_num_threads_is_integer_ge_4 succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec592525472/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec592525472.dir/build.make CMakeFiles/cmTryCompileExec592525472.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec592525472.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_max_num_threads_is_integer_ge_4   -o CMakeFiles/cmTryCompileExec592525472.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec592525472
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec592525472.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_max_num_threads_is_integer_ge_4    CMakeFiles/cmTryCompileExec592525472.dir/src.cxx.o  -o cmTryCompileExec592525472 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+int main(void)
+{	const char* number = "48";
+	int value = 0;
+	while( *number == ' ' )
+		number++;
+	while( '0' <= *number && *number <= '9' )
+	{	value = 10 * value + (int)(*number - '0');
+		number++;
+	}
+	while( *number == ' ' )
+		number++;
+	if( *number != char(0) )
+		return 1;
+	if( value < 4 )
+		return 1;
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_has_mkstemp_result succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec259282430/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec259282430.dir/build.make CMakeFiles/cmTryCompileExec259282430.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec259282430.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_mkstemp_result   -o CMakeFiles/cmTryCompileExec259282430.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec259282430
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec259282430.dir/link.txt --verbose=1
+/usr/bin/c++    -Dcppad_has_mkstemp_result    CMakeFiles/cmTryCompileExec259282430.dir/src.cxx.o  -o cmTryCompileExec259282430 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+# include <stdlib.h>
+# include <unistd.h>
+int main(void)
+{
+	char pattern[] = "/tmp/fileXXXXXX";
+	int fd = mkstemp(pattern);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test pod_type_bool succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec939225409/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec939225409.dir/build.make CMakeFiles/cmTryCompileExec939225409.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec939225409.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_bool   -o CMakeFiles/cmTryCompileExec939225409.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec939225409
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec939225409.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_bool    CMakeFiles/cmTryCompileExec939225409.dir/src.cxx.o  -o cmTryCompileExec939225409 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; }  
+	template <> inline bool is_pod<bool>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_float succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3118749056/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3118749056.dir/build.make CMakeFiles/cmTryCompileExec3118749056.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3118749056.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_float   -o CMakeFiles/cmTryCompileExec3118749056.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3118749056
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3118749056.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_float    CMakeFiles/cmTryCompileExec3118749056.dir/src.cxx.o  -o cmTryCompileExec3118749056 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; } 
+	template <> inline bool is_pod<float>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_double succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1802772463/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1802772463.dir/build.make CMakeFiles/cmTryCompileExec1802772463.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1802772463.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_double   -o CMakeFiles/cmTryCompileExec1802772463.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1802772463
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1802772463.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_double    CMakeFiles/cmTryCompileExec1802772463.dir/src.cxx.o  -o cmTryCompileExec1802772463 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; } 
+	template <> inline bool is_pod<double>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_long_double succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1073872675/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1073872675.dir/build.make CMakeFiles/cmTryCompileExec1073872675.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1073872675.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_long_double   -o CMakeFiles/cmTryCompileExec1073872675.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1073872675
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1073872675.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_long_double    CMakeFiles/cmTryCompileExec1073872675.dir/src.cxx.o  -o cmTryCompileExec1073872675 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; } 
+	template <> inline bool is_pod<long double>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_signed_char succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2984578669/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2984578669.dir/build.make CMakeFiles/cmTryCompileExec2984578669.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2984578669.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_signed_char   -o CMakeFiles/cmTryCompileExec2984578669.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2984578669
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2984578669.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_signed_char    CMakeFiles/cmTryCompileExec2984578669.dir/src.cxx.o  -o cmTryCompileExec2984578669 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; } 
+	template <> inline bool is_pod<signed char>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_unsigned_char succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3454555680/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3454555680.dir/build.make CMakeFiles/cmTryCompileExec3454555680.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3454555680.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_unsigned_char   -o CMakeFiles/cmTryCompileExec3454555680.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3454555680
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3454555680.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_unsigned_char    CMakeFiles/cmTryCompileExec3454555680.dir/src.cxx.o  -o cmTryCompileExec3454555680 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; } 
+	template <> inline bool is_pod<unsigned char>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_signed_short succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3348441117/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3348441117.dir/build.make CMakeFiles/cmTryCompileExec3348441117.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3348441117.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_signed_short   -o CMakeFiles/cmTryCompileExec3348441117.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3348441117
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3348441117.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_signed_short    CMakeFiles/cmTryCompileExec3348441117.dir/src.cxx.o  -o cmTryCompileExec3348441117 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; } 
+	template <> inline bool is_pod<signed short>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_unsigned_short succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4285104664/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4285104664.dir/build.make CMakeFiles/cmTryCompileExec4285104664.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4285104664.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_unsigned_short   -o CMakeFiles/cmTryCompileExec4285104664.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec4285104664
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4285104664.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_unsigned_short    CMakeFiles/cmTryCompileExec4285104664.dir/src.cxx.o  -o cmTryCompileExec4285104664 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; } 
+	template <> inline bool is_pod<unsigned short>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_signed_int succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2020274296/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2020274296.dir/build.make CMakeFiles/cmTryCompileExec2020274296.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2020274296.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_signed_int   -o CMakeFiles/cmTryCompileExec2020274296.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2020274296
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2020274296.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_signed_int    CMakeFiles/cmTryCompileExec2020274296.dir/src.cxx.o  -o cmTryCompileExec2020274296 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; } 
+	template <> inline bool is_pod<signed int>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_unsigned_int succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1156932667/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1156932667.dir/build.make CMakeFiles/cmTryCompileExec1156932667.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1156932667.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_unsigned_int   -o CMakeFiles/cmTryCompileExec1156932667.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec1156932667
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1156932667.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_unsigned_int    CMakeFiles/cmTryCompileExec1156932667.dir/src.cxx.o  -o cmTryCompileExec1156932667 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; }
+	template <> inline bool is_pod<signed int>(void) { return true; } 
+	template <> inline bool is_pod<unsigned int>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_signed_long succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3456186917/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3456186917.dir/build.make CMakeFiles/cmTryCompileExec3456186917.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3456186917.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_signed_long   -o CMakeFiles/cmTryCompileExec3456186917.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3456186917
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3456186917.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_signed_long    CMakeFiles/cmTryCompileExec3456186917.dir/src.cxx.o  -o cmTryCompileExec3456186917 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; }
+	template <> inline bool is_pod<signed int>(void) { return true; }
+	template <> inline bool is_pod<unsigned int>(void) { return true; } 
+	template <> inline bool is_pod<signed long>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_unsigned_long succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3914835420/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3914835420.dir/build.make CMakeFiles/cmTryCompileExec3914835420.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3914835420.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_unsigned_long   -o CMakeFiles/cmTryCompileExec3914835420.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3914835420
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3914835420.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_unsigned_long    CMakeFiles/cmTryCompileExec3914835420.dir/src.cxx.o  -o cmTryCompileExec3914835420 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; }
+	template <> inline bool is_pod<signed int>(void) { return true; }
+	template <> inline bool is_pod<unsigned int>(void) { return true; }
+	template <> inline bool is_pod<signed long>(void) { return true; } 
+	template <> inline bool is_pod<unsigned long>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_signed_long_long succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2723742200/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2723742200.dir/build.make CMakeFiles/cmTryCompileExec2723742200.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2723742200.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_signed_long_long   -o CMakeFiles/cmTryCompileExec2723742200.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec2723742200
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2723742200.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_signed_long_long    CMakeFiles/cmTryCompileExec2723742200.dir/src.cxx.o  -o cmTryCompileExec2723742200 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; }
+	template <> inline bool is_pod<signed int>(void) { return true; }
+	template <> inline bool is_pod<unsigned int>(void) { return true; }
+	template <> inline bool is_pod<signed long>(void) { return true; }
+	template <> inline bool is_pod<unsigned long>(void) { return true; } 
+		
+	template <> inline bool is_pod<signed long long>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C++ SOURCE FILE Test pod_type_unsigned_long_long succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4158989715/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4158989715.dir/build.make CMakeFiles/cmTryCompileExec4158989715.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4158989715.dir/src.cxx.o
+/usr/bin/c++    -Dpod_type_unsigned_long_long   -o CMakeFiles/cmTryCompileExec4158989715.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec4158989715
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4158989715.dir/link.txt --verbose=1
+/usr/bin/c++    -Dpod_type_unsigned_long_long    CMakeFiles/cmTryCompileExec4158989715.dir/src.cxx.o  -o cmTryCompileExec4158989715 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+template <class T> inline bool is_pod(void) { return false; } 
+	template <> inline bool is_pod<bool>(void) { return true; }
+	template <> inline bool is_pod<float>(void) { return true; }
+	template <> inline bool is_pod<double>(void) { return true; }
+	template <> inline bool is_pod<long double>(void) { return true; }
+	template <> inline bool is_pod<signed char>(void) { return true; }
+	template <> inline bool is_pod<unsigned char>(void) { return true; }
+	template <> inline bool is_pod<signed short>(void) { return true; }
+	template <> inline bool is_pod<unsigned short>(void) { return true; }
+	template <> inline bool is_pod<signed int>(void) { return true; }
+	template <> inline bool is_pod<unsigned int>(void) { return true; }
+	template <> inline bool is_pod<signed long>(void) { return true; }
+	template <> inline bool is_pod<unsigned long>(void) { return true; } 
+	template <> inline bool is_pod<signed long long>(void) { return true; }
+		
+	template <> inline bool is_pod<unsigned long long>(void) { return true; } 
+	int main(void) { return 0; }
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec219679337/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec219679337.dir/build.make CMakeFiles/cmTryCompileExec219679337.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec219679337.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec219679337.dir/src.c.o   -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec219679337
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec219679337.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec219679337.dir/src.c.o  -o cmTryCompileExec219679337 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec457243465/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec457243465.dir/build.make CMakeFiles/cmTryCompileExec457243465.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec457243465.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTryCompileExec457243465.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec457243465
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec457243465.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTryCompileExec457243465.dir/src.cxx.o  -o cmTryCompileExec457243465 -rdynamic 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Determining if the function pthread_barrier_wait exists in the pthread passed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4056539168/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4056539168.dir/build.make CMakeFiles/cmTryCompileExec4056539168.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4056539168.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_barrier_wait   -o CMakeFiles/cmTryCompileExec4056539168.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4056539168
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4056539168.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_barrier_wait    CMakeFiles/cmTryCompileExec4056539168.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4056539168  -L/usr/lib/x86_64-linux-gnu/libpthread.so -rdynamic -lpthread -Wl,-rpath,/usr/lib/x86_64-linux-gnu/libpthread.so 
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+
+

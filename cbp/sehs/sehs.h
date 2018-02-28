@@ -109,15 +109,11 @@ public:
 
     bool WavefrontExpansion(sKinodynamic start, sKinodynamic goal, int sample_number);
 
-    bool HybirdExpansion(sKinodynamic start, sKinodynamic goal, int sample_number);
-
     bool SpaceExploration(sKinodynamic start, sKinodynamic goal);
 
     bool OverLap(sFreeCircle current, sFreeCircle comparison, float margin);
 
     bool NotExist(sFreeCircle current, std::vector<sFreeCircle> closed_vector);
-
-    bool Expand(sFreeCircle current, sFreeCircle goal, int sample_number, sFreeCircle& target);
 
     bool ReachedGoal(sKinodynamic currentvs, sKinodynamic goalvs);
 

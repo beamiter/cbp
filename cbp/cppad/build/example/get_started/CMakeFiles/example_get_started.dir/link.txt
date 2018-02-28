@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/example_get_started.dir/get_started.cpp.o  -o example_get_started -rdynamic 

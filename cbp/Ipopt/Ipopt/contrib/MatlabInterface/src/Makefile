@@ -29,21 +29,21 @@ MEX = $(MATLAB_HOME)/bin/mex
 #############################################################################
 # Do not modify anything below unless you know what you're doing.
 exec_prefix = ${prefix}
-prefix      = /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt
+prefix      = /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt
 libdir      = ${exec_prefix}/lib
 
 CXX         = g++
 CXXFLAGS    = -O3 -pipe -DNDEBUG -Wparentheses -Wreturn-type -Wcast-qual -Wall -Wpointer-arith -Wwrite-strings -Wconversion -Wno-unknown-pragmas -Wno-long-long   -DIPOPT_BUILD -DMATLAB_MEXFILE # -DMWINDEXISINT
-LDFLAGS     = $(CXXFLAGS)  -Wl,--rpath -Wl,/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib  #-static-libgcc -static-libstdc++
+LDFLAGS     = $(CXXFLAGS)  -Wl,--rpath -Wl,/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib  #-static-libgcc -static-libstdc++
 
 # Include directories (we use the CYGPATH_W variables to allow compilation with Windows compilers)
-INCL = `PKG_CONFIG_PATH=/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --cflags ipopt`
-#INCL = -I`$(CYGPATH_W) /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include/coin` 
+INCL = `PKG_CONFIG_PATH=/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --cflags ipopt`
+#INCL = -I`$(CYGPATH_W) /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/include/coin` 
 
 # Linker flags
-LIBS = `PKG_CONFIG_PATH=/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/home/idriver/AVOS_YUYAN/devel/lib/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --libs ipopt | sed -e 's/-framework vecLib//g'`
-##LIBS = -link -libpath:`$(CYGPATH_W) /home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libipopt.lib -llapack -lblas -lm  -ldl
-#LIBS = -L/home/idriver/AVOS_YUYAN/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lipopt `echo -llapack -lblas -lm  -ldl | sed -e 's/-framework vecLib//g'`
+LIBS = `PKG_CONFIG_PATH=/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib64/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib/pkgconfig:/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/share/pkgconfig:/opt/ros/jade/lib/pkgconfig pkg-config --libs ipopt | sed -e 's/-framework vecLib//g'`
+##LIBS = -link -libpath:`$(CYGPATH_W) /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib` libipopt.lib -llapack -lblas -lm  -ldl
+#LIBS = -L/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/Ipopt/lib -lipopt `echo -llapack -lblas -lm  -ldl | sed -e 's/-framework vecLib//g'`
 LIBS_STATIC = $(LIBS)
 #LIBS_STATIC = $$(echo " $(LIBS) " | sed -e "s| -lgfortran | `gfortran -print-file-name=libgfortran.a` |g" -e "s| -lquadmath | `gfortran -print-file-name=libquadmath.a` |g")
 ##LIBS_STATIC = $$(echo " $(LIBS) " | sed -e 's| -Wl,-Bdynamic,-lmwma57,-Bstatic | -lmwma57 |g')

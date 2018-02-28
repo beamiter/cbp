@@ -179,7 +179,7 @@ public:
 
     sKinodynamic center;
     float radius;
-
+    bool forward;
 };
 
 
