@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+  CppAD: C++ Algorithmic Differentiation: Copyright (C) 2003-17 Bradley M. Bell
+
+  CppAD is distributed under multiple licenses. This distribution is under
+  the terms of the
+                      Eclipse Public License Version 1.0.
+
+  A copy of this license is included in the COPYING file of this distribution.
+  Please visit http://www.coin-or.org/CppAD/ for information on other licenses.
+-------------------------------------------------------------------------------
+$begin abs_normal$$
+$spell
+	Andreas Griewank
+	Jens-Uwe Bernt
+	Manuel Radons
+	Tom Streubel
+$$
+
+$section Abs-normal Representation of Non-Smooth Functions$$
+
+$head Reference$$
+Andreas Griewank, Jens-Uwe Bernt, Manuel Radons, Tom Streubel,
+$italic Solving piecewise linear systems in abs-normal form$$,
+Linear Algebra and its Applications,
+vol. 471 (2015), pages 500-530.
+
+$childtable%cppad/core/abs_normal_fun.hpp
+	%example/abs_normal/abs_print_mat.hpp
+	%example/abs_normal/abs_eval.hpp
+	%example/abs_normal/simplex_method.hpp
+	%example/abs_normal/lp_box.hpp
+	%example/abs_normal/abs_min_linear.hpp
+	%example/abs_normal/min_nso_linear.hpp
+	%example/abs_normal/qp_interior.hpp
+	%example/abs_normal/qp_box.hpp
+	%example/abs_normal/abs_min_quad.hpp
+	%example/abs_normal/min_nso_quad.hpp
+%$$
+
+$end

@@ -1,0 +1,426 @@
+Performing C++ SOURCE FILE Test cppad_has_rvalue_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1440334708/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1440334708.dir/build.make CMakeFiles/cmTryCompileExec1440334708.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1440334708.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_rvalue_result   -o CMakeFiles/cmTryCompileExec1440334708.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:3:6: error: expected unqualified-id before ‘&&’ token
+ { int&& value = 1 + 2;
+      ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:6: error: ‘value’ was not declared in this scope
+  if( value != 3 )
+      ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1440334708.dir/src.cxx.o] 错误 1
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1440334708/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+int main(void)
+{	int&& value = 1 + 2;
+	if( value != 3 )
+		return 1;
+	return 0;
+}
+Performing C++ SOURCE FILE Test cppad_has_nullptr_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec517675391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec517675391.dir/build.make CMakeFiles/cmTryCompileExec517675391.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec517675391.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_nullptr_result   -o CMakeFiles/cmTryCompileExec517675391.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:3:13: error: ‘nullptr’ was not declared in this scope
+ { char *c = nullptr;
+             ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec517675391.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec517675391/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+int main(void)
+{	char *c = nullptr;
+	return 0;
+}
+Performing C++ SOURCE FILE Test cppad_compiler_has_erf_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2793653481/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2793653481.dir/build.make CMakeFiles/cmTryCompileExec2793653481.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2793653481.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_erf_result   -o CMakeFiles/cmTryCompileExec2793653481.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘erf’ is not a member of ‘std’
+ { std::erf(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:249:1: note:   ‘erf’
+ __MATHCALL (erf,, (_Mdouble_));
+ ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2793653481.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec2793653481/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::erf(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_compiler_has_asinh_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2220344374/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2220344374.dir/build.make CMakeFiles/cmTryCompileExec2220344374.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2220344374.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_asinh_result   -o CMakeFiles/cmTryCompileExec2220344374.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘asinh’ is not a member of ‘std’
+ { std::asinh(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:90:1: note:   ‘asinh’
+ __MATHCALL (asinh,, (_Mdouble_ __x));
+ ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec2220344374.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec2220344374/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::asinh(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_compiler_has_acosh_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec400763714/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec400763714.dir/build.make CMakeFiles/cmTryCompileExec400763714.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec400763714.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_acosh_result   -o CMakeFiles/cmTryCompileExec400763714.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘acosh’ is not a member of ‘std’
+ { std::acosh(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:88:1: note:   ‘acosh’
+ __MATHCALL (acosh,, (_Mdouble_ __x));
+ ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec400763714.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec400763714/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::acosh(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_compiler_has_atanh_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1389808382/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1389808382.dir/build.make CMakeFiles/cmTryCompileExec1389808382.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1389808382.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_atanh_result   -o CMakeFiles/cmTryCompileExec1389808382.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘atanh’ is not a member of ‘std’
+ { std::atanh(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:92:1: note:   ‘atanh’
+ __MATHCALL (atanh,, (_Mdouble_ __x));
+ ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1389808382.dir/src.cxx.o] 错误 1
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1389808382/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::atanh(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_compiler_has_expm1_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3941545762/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3941545762.dir/build.make CMakeFiles/cmTryCompileExec3941545762.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3941545762.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_expm1_result   -o CMakeFiles/cmTryCompileExec3941545762.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘expm1’ is not a member of ‘std’
+ { std::expm1(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:128:1: note:   ‘expm1’
+ __MATHCALL (expm1,, (_Mdouble_ __x));
+ ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3941545762.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec3941545762/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::expm1(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_compiler_has_log1p_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3218641462/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3218641462.dir/build.make CMakeFiles/cmTryCompileExec3218641462.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3218641462.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_compiler_has_log1p_result   -o CMakeFiles/cmTryCompileExec3218641462.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: error: ‘log1p’ is not a member of ‘std’
+ { std::log1p(0.0);
+   ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:3: note: suggested alternative:
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h:39,
+                 from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h:426,
+                 from /usr/include/c++/4.8/cmath:41,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:131:1: note:   ‘log1p’
+ __MATHCALL (log1p,, (_Mdouble_ __x));
+ ^
+make[1]: *** [CMakeFiles/cmTryCompileExec3218641462.dir/src.cxx.o] 错误 1
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3218641462/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <cmath>
+int main(void)
+{	std::log1p(0.0);
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test cppad_has_steady_clock_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec151979619/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec151979619.dir/build.make CMakeFiles/cmTryCompileExec151979619.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec151979619.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_steady_clock_result   -o CMakeFiles/cmTryCompileExec151979619.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+In file included from /usr/include/c++/4.8/chrono:35:0,
+                 from /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:2:
+/usr/include/c++/4.8/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support for the \
+  ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:6:8: error: ‘std::chrono’ has not been declared
+ { std::chrono::time_point<std::chrono::steady_clock> start, end;
+        ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:6:32: error: ‘std::chrono’ has not been declared
+ { std::chrono::time_point<std::chrono::steady_clock> start, end;
+                                ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:6:54: error: ‘start’ was not declared in this scope
+ { std::chrono::time_point<std::chrono::steady_clock> start, end;
+                                                      ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:6:61: error: ‘end’ was not declared in this scope
+ { std::chrono::time_point<std::chrono::steady_clock> start, end;
+                                                             ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:7:18: error: ‘std::chrono’ has not been declared
+     start = std::chrono::steady_clock::now();
+                  ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:8:7: error: ‘std::this_thread’ has not been declared
+  std::this_thread::sleep_for( std::chrono::milliseconds(1) );
+       ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:8:36: error: ‘std::chrono’ has not been declared
+  std::this_thread::sleep_for( std::chrono::milliseconds(1) );
+                                    ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:9:18: error: ‘std::chrono’ has not been declared
+     end   = std::chrono::steady_clock::now();
+                  ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:10:10: error: ‘std::chrono’ has not been declared
+     std::chrono::duration<double> difference = end - start;
+          ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:10:27: error: expected primary-expression before ‘double’
+     std::chrono::duration<double> difference = end - start;
+                           ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:10:27: error: expected ‘;’ before ‘double’
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:11:27: error: ‘difference’ was not declared in this scope
+  double elapsed_seconds = difference.count();
+                           ^
+make[1]: *** [CMakeFiles/cmTryCompileExec151979619.dir/src.cxx.o] 错误 1
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec151979619/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <chrono>
+# include <thread>
+# include <iostream>
+int main(void)
+{	std::chrono::time_point<std::chrono::steady_clock> start, end;
+    start = std::chrono::steady_clock::now();
+	std::this_thread::sleep_for( std::chrono::milliseconds(1) );
+    end   = std::chrono::steady_clock::now();
+    std::chrono::duration<double> difference = end - start;
+	double elapsed_seconds = difference.count();
+	if( elapsed_seconds >= 0.9e-3 ) // 1e-3 = one millisecond
+		return 0;
+	return 1;
+}
+
+Performing C++ SOURCE FILE Test cppad_has_tmpnam_s_result failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec874484292/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec874484292.dir/build.make CMakeFiles/cmTryCompileExec874484292.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec874484292.dir/src.cxx.o
+/usr/bin/c++    -Dcppad_has_tmpnam_s_result   -o CMakeFiles/cmTryCompileExec874484292.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:4:17: error: ‘L_tmpnam_s’ was not declared in this scope
+ { char filename[L_tmpnam_s ];
+                 ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:5:15: error: ‘filename’ was not declared in this scope
+  if( tmpnam_s(filename, L_tmpnam_s ) != 0 )
+               ^
+/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx:5:36: error: ‘tmpnam_s’ was not declared in this scope
+  if( tmpnam_s(filename, L_tmpnam_s ) != 0 )
+                                    ^
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec874484292.dir/src.cxx.o] 错误 1
+make: *** [cmTryCompileExec874484292/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <stdio.h>
+int main(void)
+{	char filename[L_tmpnam_s ];
+	if( tmpnam_s(filename, L_tmpnam_s ) != 0 )
+		return 1;
+	return 0;
+}
+
+Performing C++ SOURCE FILE Test include_lib_boost_thread-mt_ok failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3218386976/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3218386976.dir/build.make CMakeFiles/cmTryCompileExec3218386976.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3218386976.dir/src.cxx.o
+/usr/bin/c++    -Dinclude_lib_boost_thread-mt_ok -L/usr/lib   -o CMakeFiles/cmTryCompileExec3218386976.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+<command-line>:0:25: warning: missing whitespace after the macro name [enabled by default]
+Linking CXX executable cmTryCompileExec3218386976
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3218386976.dir/link.txt --verbose=1
+/usr/bin/c++    -Dinclude_lib_boost_thread-mt_ok -L/usr/lib    CMakeFiles/cmTryCompileExec3218386976.dir/src.cxx.o  -o cmTryCompileExec3218386976 -rdynamic -lboost_thread-mt 
+/usr/bin/ld: 找不到 -lboost_thread-mt
+collect2: error: ld returned 1 exit status
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3218386976] 错误 1
+make: *** [cmTryCompileExec3218386976/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <boost/thread.hpp>
+int main(void)
+{	boost::barrier wait(1);
+	return 0;
+}
+Performing C++ SOURCE FILE Test include_lib_boost_thread_ok failed with the following output:
+Change Dir: /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3950565219/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3950565219.dir/build.make CMakeFiles/cmTryCompileExec3950565219.dir/build
+make[1]: 正在进入目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+/usr/local/bin/cmake -E cmake_progress_report /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3950565219.dir/src.cxx.o
+/usr/bin/c++    -Dinclude_lib_boost_thread_ok -L/usr/lib   -o CMakeFiles/cmTryCompileExec3950565219.dir/src.cxx.o -c /home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTryCompileExec3950565219
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3950565219.dir/link.txt --verbose=1
+/usr/bin/c++    -Dinclude_lib_boost_thread_ok -L/usr/lib    CMakeFiles/cmTryCompileExec3950565219.dir/src.cxx.o  -o cmTryCompileExec3950565219 -rdynamic -lboost_thread 
+CMakeFiles/cmTryCompileExec3950565219.dir/src.cxx.o：在函数‘__static_initialization_and_destruction_0(int, int)’中：
+src.cxx:(.text+0xa7)：对‘boost::system::generic_category()’未定义的引用
+src.cxx:(.text+0xb3)：对‘boost::system::generic_category()’未定义的引用
+src.cxx:(.text+0xbf)：对‘boost::system::system_category()’未定义的引用
+CMakeFiles/cmTryCompileExec3950565219.dir/src.cxx.o：在函数‘boost::thread_exception::thread_exception(int, char const*)’中：
+src.cxx:(.text._ZN5boost16thread_exceptionC2EiPKc[_ZN5boost16thread_exceptionC5EiPKc]+0x14)：对‘boost::system::system_category()’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]:正在离开目录 `/home/idriver/sehs/src/kernel/ivplanning/ivpathplanner/src/avoidObsModel/cbp/cppad.git/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3950565219] 错误 1
+make: *** [cmTryCompileExec3950565219/fast] 错误 2
+
+Return value: 1
+Source file was:
+
+# include <boost/thread.hpp>
+int main(void)
+{	boost::barrier wait(1);
+	return 0;
+}

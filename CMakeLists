@@ -1,0 +1,42 @@
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+        src/avoidObsModel/cbp
+        src/avoidObsModel/cbp/common
+        src/avoidObsModel/cbp/dwa
+        src/avoidObsModel/cbp/sehs
+        src/avoidObsModel/cbp/Ipopt
+        src/avoidObsModel/cbp/Ipopt/include
+)
+
+link_directories(src/avoidObsModel/cbp/Ipopt/lib)
+
+set(SOURCE_FILES
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/dubins.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/dwa/dwaplanner.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/reeds_shepp.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/visualize.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/hermite_curve.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/sehs/sehs.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/sehs/exploration.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/sehs/modelsimulation.cpp
+	##${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/Optimizer.cpp
+    )
+
+set(HEADER_FILES
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/functions.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/dubins.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/dwa/dwaplanner.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/reeds_shepp.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/visualize.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/hermite_curve.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/sehs/sehs.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/sehs/stateheaders.h
+	${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/dwa/commonheaders.h
+	##${CMAKE_CURRENT_SOURCE_DIR}/src/avoidObsModel/cbp/common/Optimizer.h
+	)
+
+add_executable(ivcbp src/avoidObsModel/cbp/ivcbp.cpp ${SOURCE_FILES} ${ASTAR_SOURCE_FILES}
+	           ../../avoslib/geotool.cpp ../../avoslib/iabasemaptool.cpp)
+add_dependencies(ivcbp ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(ivcbp ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+
